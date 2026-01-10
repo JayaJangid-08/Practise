@@ -1,6 +1,6 @@
-# Python Practice Programs
+# Practice Programs
 
-This repository contains my Python practice programs.
+This repository contains my practice programs.
 
 ## About
 - This repo is created for learning Python
@@ -12,7 +12,7 @@ This repository contains my Python practice programs.
 - Tic Tac Toe Game
 - Text Editor
 - Rent Calculator
-- Other basic Python programs
+- Other basic programs
 
 ## Purpose
 This repository is made for practice during my BCA course.
