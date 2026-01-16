@@ -10,3 +10,6 @@ const addTask = () => {
         updateTasksList();
     }
 };
+
+const toggleTaskComplete = (index) => {
+};
