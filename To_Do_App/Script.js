@@ -22,5 +22,9 @@ const deleteTask = (index) => {
 };
 
 const editTask = (index) => {
-    
+    const newText = prompt("Edit task:", tasks[index].text);
+    if (newText && newText.trim() !== "") {
+        tasks[index].text = newText.trim();
+        updateTasksList();
+    }
 };
