@@ -15,3 +15,12 @@ const toggleTaskComplete = (index) => {
     tasks[index].completed = !tasks[index].completed;
     updateTasksList();
 };
+
+const deleteTask = (index) => {
+    tasks.splice(index, 1);
+    updateTasksList();
+};
+
+const editTask = (index) => {
+    
+};
