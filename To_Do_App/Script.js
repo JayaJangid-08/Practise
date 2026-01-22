@@ -33,7 +33,27 @@ const updateTasksList = () => {
     const taskList = document.getElementById("task-list");
     taskList.innerHTML = "";
 
-    
+    tasks.forEach((task, index) => {
+        const li = document.createElement("li");
+
+        li.innerHTML = `
+            <div class="task-item">
+                <div class="task ${task.completed ? "completed" : ""}">
+                    <input type="checkbox" class="checkbox" ${task.completed ? "checked" : ""}>
+                    <p>${task.text}</p>
+                </div>
+                <div>
+                    <img src="./Image/edit.png" onclick="editTask(${index})">
+                    <img src="./Image/bin.png" onclick="deleteTask(${index})">
+                </div>
+            </div>
+        `;
+
+        li.querySelector(".checkbox")
+          .addEventListener("change", () => toggleTaskComplete(index));
+
+        taskList.appendChild(li);
+    });
 
     updateStats();
 };
