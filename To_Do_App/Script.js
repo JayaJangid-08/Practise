@@ -28,3 +28,12 @@ const editTask = (index) => {
         updateTasksList();
     }
 };
+
+const updateTasksList = () => {
+    const taskList = document.getElementById("task-list");
+    taskList.innerHTML = "";
+
+    
+
+    updateStats();
+};
