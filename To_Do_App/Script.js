@@ -57,3 +57,7 @@ const updateTasksList = () => {
 
     updateStats();
 };
+
+const updateStats = () => {
+    
+};
