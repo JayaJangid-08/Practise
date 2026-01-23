@@ -59,5 +59,15 @@ const updateTasksList = () => {
 };
 
 const updateStats = () => {
-    
+    const completed = tasks.filter(t => t.completed).length;
+    const total = tasks.length;
+
+    document.getElementById("stats").innerText = `${completed} / ${total}`;
+
+    const progress = total === 0 ? 0 : (completed / total) * 100;
+    document.getElementById("progress").style.width = `${progress}%`;
+
+    if (total > 0 && completed === total) {
+    startConfetti();
+    }
 };
