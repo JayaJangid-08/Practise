@@ -71,3 +71,9 @@ const updateStats = () => {
     startConfetti();
     }
 };
+
+document.getElementById("taskForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    addTask();
+});
+
