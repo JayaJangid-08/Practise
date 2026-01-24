@@ -77,3 +77,11 @@ document.getElementById("taskForm").addEventListener("submit", (e) => {
     addTask();
 });
 
+const canvas = document.getElementById("confetti");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let confettiPieces = [];
+let confettiActive = false;
