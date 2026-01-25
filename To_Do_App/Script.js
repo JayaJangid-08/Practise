@@ -85,3 +85,18 @@ canvas.height = window.innerHeight;
 
 let confettiPieces = [];
 let confettiActive = false;
+
+function startConfetti() {
+    confettiPieces = [];
+    confettiActive = true;
+
+    for (let i = 0; i < 150; i++) {
+        confettiPieces.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height - canvas.height,
+            size: Math.random() * 8 + 4,
+            speed: Math.random() * 3 + 2,
+            color: `hsl(${Math.random() * 360}, 100%, 50%)`
+        });
+    }
+}
