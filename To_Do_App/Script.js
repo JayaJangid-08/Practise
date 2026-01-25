@@ -99,4 +99,11 @@ function startConfetti() {
             color: `hsl(${Math.random() * 360}, 100%, 50%)`
         });
     }
+
+    animateConfetti();
+
+    setTimeout(() => {
+        confettiActive = false;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }, 3000);
 }
