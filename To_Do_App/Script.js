@@ -107,3 +107,12 @@ function startConfetti() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
     }, 3000);
 }
+
+function animateConfetti() {
+    if (!confettiActive) return;
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    
+    requestAnimationFrame(animateConfetti);
+}
