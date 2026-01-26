@@ -113,6 +113,15 @@ function animateConfetti() {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    
+    confettiPieces.forEach(p => {
+        ctx.fillStyle = p.color;
+        ctx.fillRect(p.x, p.y, p.size, p.size);
+        p.y += p.speed;
+
+        if (p.y > canvas.height) {
+            p.y = -10;
+        }
+    });
+
     requestAnimationFrame(animateConfetti);
 }
