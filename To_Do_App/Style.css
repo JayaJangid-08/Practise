@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --background: #000430;
+    --secondarybackground: #171c48;
+    --text: #fff;
+    --purple: #828dff;
+    --teal: #24feee;
+}
