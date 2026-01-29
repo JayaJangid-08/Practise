@@ -24,3 +24,17 @@ body{
     margin: 120px auto 0;
     width: 350px;
 }
+
+.stats-container{
+    display: flex;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid var(--purple);
+    gap: 20px;
+    width: 100%;
+}
+
+.details{
+    width: 100%;
+}
+
