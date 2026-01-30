@@ -54,3 +54,14 @@ body{
     transition: width 0.3s ease;
 }
 
+.numbers{
+    width: 80px;
+    height: 80px;
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+}
