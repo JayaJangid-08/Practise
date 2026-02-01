@@ -92,3 +92,12 @@ button{
     border: none;
     cursor: pointer;
 }
+
+#task-list{
+    margin-top: 25px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
